@@ -1,0 +1,51 @@
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  padding-top: 64px; /* Height of header */
+  flex: 1;
+  padding: 80px 24px 24px 24px;
+  background-color: #f5f5f5;
+}
+
+.page-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+/* Common container styles */
+.dashboard-container,
+.modules-container,
+.scenarios-container,
+.testcases-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 72px 16px 16px 16px;
+  }
+
+  .dashboard-container,
+  .modules-container,
+  .scenarios-container,
+  .testcases-container {
+    padding: 16px;
+  }
+
+  .page-title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+} 

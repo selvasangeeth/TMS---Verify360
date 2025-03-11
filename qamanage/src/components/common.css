@@ -1,0 +1,96 @@
+/* Common button styles */
+.add-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: background-color 0.2s;
+  height: 32px;
+  width: fit-content;
+}
+
+.add-button:hover {
+  background-color: #45a049;
+}
+
+/* Icon size adjustment */
+.add-button svg {
+  width: 16px; /* Smaller icon */
+  height: 16px;
+}
+
+/* For modal buttons */
+.modal-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.modal-buttons button {
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  height: 32px;
+}
+
+/* Cancel button */
+.cancel-button {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  height: 32px;
+}
+
+.cancel-button:hover {
+  background-color: #5a6268;
+}
+
+.actions-container {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.search-container {
+  flex: 3; /* Takes up 3 parts of the space */
+  max-width: 600px; /* Prevents the search bar from becoming too wide */
+}
+
+.search-input {
+  width: 100%;
+  padding: 6px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  height: 32px;
+}
+
+.button-container {
+  flex: 1; /* Takes up 1 part of the space */
+  max-width: 200px; /* Prevents the button from becoming too wide */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .actions-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-container,
+  .button-container {
+    width: 100%;
+    max-width: 100%;
+  }
+}

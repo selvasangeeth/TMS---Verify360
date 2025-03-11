@@ -1,0 +1,106 @@
+
+.log-list-container {
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.log-list-container h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.filters {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.filters label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: #333;
+}
+
+.filters select,
+.filters input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.log-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.log-table th,
+.log-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+.log-table th {
+  background-color: #1a365d;
+  color: white;
+}
+
+.log-table td {
+  background-color: #f8f9fa;
+}
+
+.log-table .label {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: white;
+}
+
+.label-case {
+  background-color: #d3d3d3;
+  color: #333;
+}
+
+.label-scenario {
+  background-color: #87ceeb;
+  color: #333;
+}
+
+.label-module {
+  background-color: #d3d3d3;
+  color: #333;
+}
+
+.label-project {
+  background-color: #98fb98;
+  color: #333;
+}
+
+.label-run {
+  background-color: #ff6347;
+  color: #333;
+}

@@ -1,0 +1,150 @@
+.testcases-container {
+  padding: 20px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.scenario-info {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.scenario-info h2 {
+  margin: 0;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.scenario-id {
+  margin: 10px 0 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Rest of the CSS is similar to Scenarios.css */
+/* Copy the relevant styles from Scenarios.css and replace 'scenario' with 'testcase' where appropriate */
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Changed from center to flex-start */
+  z-index: 1000;
+  padding: 20px; /* Add padding to ensure space at top and bottom */
+  overflow-y: auto; /* Enable scrolling on the overlay */
+}
+
+.modal-content {
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  max-height: 90vh; /* Set maximum height */
+  overflow-y: auto; /* Enable scrolling within the modal */
+  margin: 20px auto; /* Add margin to ensure space at top and bottom */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Add smooth scrollbar for better appearance */
+.modal-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+
+/* Form styles */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #495057;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-group textarea {
+  min-height: 100px;
+  resize: vertical;
+  max-height: 200px; /* Limit textarea height */
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+  position: sticky; /* Make buttons stick to bottom */
+  bottom: 0;
+  background-color: white;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+}
+
+.cancel-btn, 
+.submit-btn {
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+}
+
+.cancel-btn {
+  background-color: #6c757d;
+  color: white;
+}
+
+.submit-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.cancel-btn:hover, 
+.submit-btn:hover {
+  opacity: 0.9;
+}
+
+/* Modal header */
+.modal-content h2 {
+  margin: 0 0 20px 0;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+} 
